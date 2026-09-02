@@ -53,3 +53,41 @@ main {
     margin-left: 1em;
     margin-right: 1em;
 }
+
+/* apply.css styles */
+.labelRequired::after {
+    content: "*";
+    color: red;
+}
+#form-skills-check {
+    display: grid;
+    grid-template-columns: 5% 5%;
+}
+form input {
+    accent-color: #217690;
+}
+#otherSkills {
+    width: 40%;
+    height: 5em;
+    font-family: sans-serif;
+}
+.btn {
+    padding: 1em 3em;
+    margin: 1em 1em 1em 0;
+    color: white;
+    border: 3px solid #023d4f;
+    border-radius: 5px;
+    font-weight: bold;
+    background: #217690;
+    cursor: pointer;
+}
+.primary {
+    background-color: #023d4f;
+    border: 3px solid #217690;
+}
+.btn:hover {
+    text-decoration: underline;
+}
+form .btn {
+    width: 15em;
+}
