@@ -3,9 +3,12 @@ body {
     padding: 0;
     font-family: sans-serif;
 }
+header {
+    border-bottom: 5px solid #217690;
+}
 nav {
     height: 5em;
-    box-shadow: 0 5px 5px 1px lightgrey;
+    background-color: #023d4f;
 }
 
 nav ul {
@@ -21,6 +24,7 @@ nav ul {
 nav li {
     height: 5em;
     width: 25%;
+    min-width: 75px;
 }
 
 nav a {
@@ -28,14 +32,23 @@ nav a {
     align-items: center;
     justify-content: center;
     height: 100%;
-    color: black;
+    color: white;
     text-decoration: none;
     font-size: large;
     font-weight: bold;
+    transition: background-color 500ms;
 }
+
 nav a:hover {
     text-decoration: underline;
+    background-color: #217690;
 }
+
+nav a img {
+    object-fit: cover;
+    height: 90%;
+}
+
 main {
     margin-left: 1em;
     margin-right: 1em;
