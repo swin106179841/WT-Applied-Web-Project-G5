@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Aidan Grier">
-    <meta name="keywords" content="job application, enviroment, organisation">
+    <meta name="keywords" content="job application, enviroment, organisation, EcoSphere">
     <meta name="description" content="apply for jobs to protect the enviroment">
     <title>Apply for Jobs | EcoSphere</title>
     <link rel="stylesheet" href="./styles/style.css">
 </head>
+
 <body>
     <header>
         <nav>
@@ -22,8 +24,123 @@
         </nav>
     </header>
     <main>
-        <h1>Apply for a Position</h1>
-
+        <div id="pageInfo">
+            <h1>Apply for a Position</h1>
+            <p>
+                Join our team and contribute to protecting our Earth. <br>
+                Easily apply for a number of positions through our simple web form.
+            </p>
+            <div id="sectionsList">
+                <h2>Form Sections</h2>
+                <ol id="formSectionList">
+                    <li><a href="#jobSection">Job</a></li>
+                    <li><a href="#personalSection">Personal Details</a></li>
+                    <li><a href="#addressSection">Address</a></li>
+                    <li><a href="#contactSection">Contact Details</a></li>
+                    <li><a href="#skillSection">Skills</a></li>
+                </ol>
+            </div>
+        </div>
+        <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+            <fieldset class="formSection" id="jobSection">
+                <span class="formSectionTitle">Job</span>
+                <p>
+                    <label for="reference">Job Reference Number</label>
+                    <input type="text" name="reference" id="reference" maxlength="6" minlength="6" placeholder="XXXXXX"
+                        pattern="[a-zA-Z0-9]{6}" required>
+                </p>
+            </fieldset>
+            <fieldset class="formSection" id="personalSection">
+                <span class="formSectionTitle">Personal Details</span>
+                <p>
+                    <label for="name" class="labelRequired">First Name</label>
+                    <input type="text" name="name" id="surname" maxlength="20" placeholder="John" required>
+                </p>
+                <p>
+                    <label for="surname" class="labelRequired">Last Name</label>
+                    <input type="text" name="surname" id="surname" maxlength="20" placeholder="Smith" required>
+                </p>
+                <p>
+                    <label for="DoB" class="labelRequired">Date of Birth</label>
+                    <input type="text" name="DoB" id="DoB" placeholder="dd/mm/yyyy"
+                        pattern="[0-3][0-9]/[0-1][0-9]/[1-2][0-9][0-9][0-9]" required>
+                </p>
+                <p>
+                <fieldset id="genderFieldset">
+                    <legend class="labelRequired">Gender</legend>
+                    <input type="radio" name="gender" id="genderM" required>
+                    <label for="genderM">Male</label>
+                    <input type="radio" name="gender" id="genderF">
+                    <label for="genderF">Female</label>
+                </fieldset>
+                </p>
+            </fieldset>
+            <fieldset class="formSection" id="addressSection">
+                <span class="formSectionTitle">Address</span>
+                <p>
+                    <label for="address" class="labelRequired">Street Address</label>
+                    <input type="text" name="address" id="address" maxlength="40" placeholder="1 Flinders St" required>
+                </p>
+                <p>
+                    <label for="suburb" class="labelRequired">Suburb/Town</label>
+                    <input type="text" name="suburb" id="suburb" maxlength="40" placeholder="Melbourne" required>
+                </p>
+                <p>
+                    <label for="state" class="labelRequired">State</label>
+                    <select name="state" id="state" required>
+                        <option value="">- please select -</option>
+                        <option value="VIC">VIC</option>
+                        <option value="NSW">NSW</option>
+                        <option value="QLD">QLD</option>
+                        <option value="NT">NT</option>
+                        <option value="WA">WA</option>
+                        <option value="SA">SA</option>
+                        <option value="TAS">TAS</option>
+                        <option value="ACT">ACT</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="postcode" class="labelRequired">Postcode</label>
+                    <input type="text" name="postcode" id="postcode" placeholder="XXXX" pattern="[0-9][0-9][0-9][0-9]"
+                        required>
+                </p>
+            </fieldset>
+            <fieldset class="formSection" id="contactSection">
+                <span class="formSectionTitle">Contact</span>
+                <p>
+                    <label for="email" class="labelRequired">email</label>
+                    <input type="email" name="email" id="email" placeholder="john_s@mail.com" required>
+                </p>
+                <p>
+                    <label for="phone" class="labelRequired">Phone Number</label>
+                    <input type="text" name="phone" id="phone" placeholder="04123456789" pattern="[0-9]{8,12}" required>
+                </p>
+            </fieldset>
+            <fieldset class="formSection" id="skillSection">
+                <span class="formSectionTitle">Skills</span>
+                <label class="labelRequired">Select Skills that Apply</label>
+                <p id="form-skills-check">
+                    <input type="checkbox" name="skills" id="skillA">
+                    <label for="skillA">SkillA</label>
+                    <input type="checkbox" name="skills" id="skillB">
+                    <label for="skillB">SkillB</label>
+                    <input type="checkbox" name="skills" id="skillC">
+                    <label for="skillC">SkillC</label>
+                    <input type="checkbox" name="skills" id="skillD">
+                    <label for="skillD">SkillD</label>
+                </p>
+                <p>
+                    <label for="otherSkills">Other Skills</label> <br>
+                    <textarea name="otherSkills" id="otherSkills"
+                        placeholder="Describe any additional skills here."></textarea>
+                </p>
+            </fieldset>
+            <div id="formControls">
+                <input type="submit" value="Apply" class="btn primary">
+                <input type="reset" value="Reset Form" class="btn">
+            </div>
+        </form>
     </main>
 </body>
+
 </html>
