@@ -2,9 +2,13 @@ body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    margin-top: 6em;
 }
 header {
     border-bottom: 5px solid #217690;
+    position: fixed;
+    top: 0;
+    width: 100vw;
 }
 nav {
     height: 5em;
