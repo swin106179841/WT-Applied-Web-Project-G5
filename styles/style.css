@@ -163,4 +163,13 @@ legend {
     .formSection {
         max-width: none;
     }
+    #sectionsList ol li a, #sectionsList ol li {
+        text-decoration: none;
+        color: black;
+        font-size: large;
+    }
+    #sectionsList ol li a:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
 }
