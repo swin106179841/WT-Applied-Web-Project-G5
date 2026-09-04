@@ -54,7 +54,7 @@
                 <span class="formSectionTitle">Personal Details</span>
                 <p>
                     <label for="name" class="labelRequired">First Name</label>
-                    <input type="text" name="name" id="surname" maxlength="20" placeholder="John" required>
+                    <input type="text" name="name" id="name" maxlength="20" placeholder="John" required>
                 </p>
                 <p>
                     <label for="surname" class="labelRequired">Last Name</label>
@@ -65,15 +65,13 @@
                     <input type="text" name="DoB" id="DoB" placeholder="dd/mm/yyyy"
                         pattern="[0-3][0-9]/[0-1][0-9]/[1-2][0-9][0-9][0-9]" required>
                 </p>
-                <p>
-                <fieldset id="genderFieldset">
+                <fieldset class="formSection" id="genderFieldset">
                     <legend class="labelRequired">Gender</legend>
                     <input type="radio" name="gender" id="genderM" required>
                     <label for="genderM">Male</label>
                     <input type="radio" name="gender" id="genderF">
                     <label for="genderF">Female</label>
                 </fieldset>
-                </p>
             </fieldset>
             <fieldset class="formSection" id="addressSection">
                 <span class="formSectionTitle">Address</span>
