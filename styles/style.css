@@ -1,10 +1,14 @@
 body {
     margin: 0;
+    margin-top: 6em;
     padding: 0;
     font-family: sans-serif;
 }
 header {
     border-bottom: 5px solid #217690;
+    position: fixed;
+    top: 0;
+    width: 100vw;
 }
 nav {
     height: 5em;
@@ -90,4 +94,73 @@ form input {
 }
 form .btn {
     width: 15em;
+}
+fieldset, input, textarea {
+    border-color: #217690;
+}
+input[type="text"], input[type="email"] {
+    background: #21769022;
+    border: none;
+    padding: 0.25em 1em;
+    border-radius: 3px;
+}
+.genderLabel {
+    font-size: medium;
+}
+.formSection p {
+    display: flex;
+    flex-direction: column;
+}
+.formSection p input {
+    flex: 1;
+    font-size: medium;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formSection {
+    width: 90%;
+    max-width: 700px;
+    min-width: 400px;
+    background-color: #f0f0f0;
+    border: none;
+    margin: 1em;
+    border-radius: 5px;
+}
+.formSectionTitle {
+    font-size: larger;
+    font-weight: bold;
+    display: block;
+}
+#formControls {
+    width: 100%;
+}
+#genderFieldset {
+    min-width: fit-content;
+}
+legend {
+    font-size: large;
+}
+#sectionsList {
+    display: none;
+}
+@media screen  and (min-width: 1000px) {
+    form {
+        width: 70%;
+        float: right;
+    }
+    #pageInfo {
+        float:left;
+        width: 30%;
+        position: fixed;
+        top: 5em;
+    }
+    #sectionsList {
+        display: block;
+    }
+    .formSection {
+        max-width: none;
+    }
 }

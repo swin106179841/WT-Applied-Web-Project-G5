@@ -24,18 +24,34 @@
         </nav>
     </header>
     <main>
-        <h1>Apply for a Position</h1>
+        <div id="pageInfo">
+            <h1>Apply for a Position</h1>
+            <p>
+                Join our team and contribute to protecting our Earth. <br>
+                Easily apply for a number of positions through our simple web form.
+            </p>
+            <div id="sectionsList">
+                <h2>Form Sections</h2>
+                <ol id="formSectionList">
+                    <li><a href="#jobSection">Job</a></li>
+                    <li><a href="#personalSection">Personal Details</a></li>
+                    <li><a href="#addressSection">Address</a></li>
+                    <li><a href="#contactSection">Contact Details</a></li>
+                    <li><a href="#skillSection">Skills</a></li>
+                </ol>
+            </div>
+        </div>
         <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
-            <fieldset>
-                <legend>Job</legend>
+            <fieldset class="formSection" id="jobSection">
+                <span class="formSectionTitle">Job</span>
                 <p>
                     <label for="reference">Job Reference Number</label>
                     <input type="text" name="reference" id="reference" maxlength="6" minlength="6" placeholder="XXXXXX"
                         pattern="[a-zA-Z0-9]{6}" required>
                 </p>
             </fieldset>
-            <fieldset>
-                <legend>Personal Details</legend>
+            <fieldset class="formSection" id="personalSection">
+                <span class="formSectionTitle">Personal Details</span>
                 <p>
                     <label for="name" class="labelRequired">First Name</label>
                     <input type="text" name="name" id="surname" maxlength="20" placeholder="John" required>
@@ -50,7 +66,7 @@
                         pattern="[0-3][0-9]/[0-1][0-9]/[1-2][0-9][0-9][0-9]" required>
                 </p>
                 <p>
-                <fieldset>
+                <fieldset id="genderFieldset">
                     <legend class="labelRequired">Gender</legend>
                     <input type="radio" name="gender" id="genderM" required>
                     <label for="genderM">Male</label>
@@ -59,8 +75,8 @@
                 </fieldset>
                 </p>
             </fieldset>
-            <fieldset>
-                <legend>Address</legend>
+            <fieldset class="formSection" id="addressSection">
+                <span class="formSectionTitle">Address</span>
                 <p>
                     <label for="address" class="labelRequired">Street Address</label>
                     <input type="text" name="address" id="address" maxlength="40" placeholder="1 Flinders St" required>
@@ -89,8 +105,8 @@
                         required>
                 </p>
             </fieldset>
-            <fieldset>
-                <legend>Contact</legend>
+            <fieldset class="formSection" id="contactSection">
+                <span class="formSectionTitle">Contact</span>
                 <p>
                     <label for="email" class="labelRequired">email</label>
                     <input type="email" name="email" id="email" placeholder="john_s@mail.com" required>
@@ -100,8 +116,8 @@
                     <input type="text" name="phone" id="phone" placeholder="04123456789" pattern="[0-9]{8,12}" required>
                 </p>
             </fieldset>
-            <fieldset>
-                <legend>Skills</legend>
+            <fieldset class="formSection" id="skillSection">
+                <span class="formSectionTitle">Skills</span>
                 <label class="labelRequired">Select Skills that Apply</label>
                 <p id="form-skills-check">
                     <input type="checkbox" name="skills" id="skillA">
@@ -115,11 +131,14 @@
                 </p>
                 <p>
                     <label for="otherSkills">Other Skills</label> <br>
-                    <textarea name="otherSkills" id="otherSkills" placeholder="Describe any additional skills here."></textarea>
+                    <textarea name="otherSkills" id="otherSkills"
+                        placeholder="Describe any additional skills here."></textarea>
                 </p>
             </fieldset>
-            <input type="submit" value="Apply" class="btn primary">
-            <input type="reset" value="Reset Form" class="btn">
+            <div id="formControls">
+                <input type="submit" value="Apply" class="btn primary">
+                <input type="reset" value="Reset Form" class="btn">
+            </div>
         </form>
     </main>
 </body>
