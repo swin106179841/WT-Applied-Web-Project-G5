@@ -201,4 +201,7 @@ form {
         cursor: pointer;
     }
 }
-/* end apply.html styles */
+table, th, td {
+    border-collapse: collapse; 
+    border: 3px solid #023d4f; 
+}
