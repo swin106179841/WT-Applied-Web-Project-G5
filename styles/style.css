@@ -70,10 +70,10 @@ main {
 
 #form-skills-check {
     display: grid;
-    grid-template-columns: 5% 5%;
+    grid-template-columns: 5% 95%;
 }
 
-form input {
+form input, form textarea {
     accent-color: #217690;
 }
 
@@ -112,7 +112,7 @@ form .btn {
 }
 
 input[type="text"],
-input[type="email"] {
+input[type="email"], form textarea {
     background: #21769022;
     border: none;
     padding: 0.25em 1em;
@@ -145,14 +145,17 @@ form {
     min-width: 400px;
     background-color: #f0f0f0;
     border: none;
+    border-top: 2em solid #f0f0f0;
     margin: 1em;
     border-radius: 5px;
+    padding: 1em;
 }
 
 .formSectionTitle {
     font-size: larger;
     font-weight: bold;
     display: block;
+    padding: 0;
 }
 
 #formControls {
@@ -162,6 +165,7 @@ form {
 #genderFieldset {
     min-width: fit-content;
     background-color: #21769022;
+    border: none;
 }
 
 #sectionsList {
