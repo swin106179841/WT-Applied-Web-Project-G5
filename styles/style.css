@@ -70,10 +70,10 @@ main {
 
 #form-skills-check {
     display: grid;
-    grid-template-columns: 5% 5%;
+    grid-template-columns: 5% 95%;
 }
 
-form input {
+form input, form textarea {
     accent-color: #217690;
 }
 
@@ -112,7 +112,7 @@ form .btn {
 }
 
 input[type="text"],
-input[type="email"] {
+input[type="email"], form textarea {
     background: #21769022;
     border: none;
     padding: 0.25em 1em;
