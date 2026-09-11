@@ -43,7 +43,7 @@
         </div>
         <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
             <fieldset class="formSection" id="jobSection">
-                <span class="formSectionTitle">Job</span>
+                <legend class="formSectionTitle">Job</legend>
                 <p>
                     <label for="reference">Job Reference Number</label>
                     <input type="text" name="reference" id="reference" maxlength="6" minlength="6" placeholder="XXXXXX"
@@ -51,7 +51,7 @@
                 </p>
             </fieldset>
             <fieldset class="formSection" id="personalSection">
-                <span class="formSectionTitle">Personal Details</span>
+                <legend class="formSectionTitle">Personal Details</legend>
                 <p>
                     <label for="name" class="labelRequired">First Name</label>
                     <input type="text" name="name" id="name" maxlength="20" placeholder="John" required>
@@ -74,7 +74,7 @@
                 </fieldset>
             </fieldset>
             <fieldset class="formSection" id="addressSection">
-                <span class="formSectionTitle">Address</span>
+                <legend class="formSectionTitle">Address</legend>
                 <p>
                     <label for="address" class="labelRequired">Street Address</label>
                     <input type="text" name="address" id="address" maxlength="40" placeholder="1 Flinders St" required>
@@ -104,7 +104,7 @@
                 </p>
             </fieldset>
             <fieldset class="formSection" id="contactSection">
-                <span class="formSectionTitle">Contact</span>
+                <legend class="formSectionTitle">Contact</legend>
                 <p>
                     <label for="email" class="labelRequired">email</label>
                     <input type="email" name="email" id="email" placeholder="john_s@mail.com" required>
@@ -115,9 +115,9 @@
                 </p>
             </fieldset>
             <fieldset class="formSection" id="skillSection">
-                <span class="formSectionTitle">Skills</span>
-                <label class="labelRequired">Select Skills that Apply</label>
-                <p id="form-skills-check">
+                <legend class="formSectionTitle">Skills</legend>
+                <fieldset id="form-skills-check">
+                    <legend class="labelRequired">Select Skills that Apply</legend>
                     <input type="checkbox" name="skills" id="skillA">
                     <label for="skillA">Self motivated to complete work.</label>
                     <input type="checkbox" name="skills" id="skillB">
@@ -126,7 +126,7 @@
                     <label for="skillC">Strong communicator and can respectfully share ideas and feedback. </label>
                     <input type="checkbox" name="skills" id="skillD">
                     <label for="skillD">A passion for protecting the enviroment.</label>
-                </p>
+                </fieldset>
                 <p>
                     <label for="otherSkills">Other Skills</label> <br>
                     <textarea name="otherSkills" id="otherSkills"
