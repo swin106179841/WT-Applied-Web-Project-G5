@@ -1,0 +1,5 @@
+Generative AI has not been used to produce code.
+
+Generative AI has been used to generate narrative details about the company that our website is about.
+This includes the company name, slogan, mission, logo and other fictional details.
+This use of generative AI has not contributed to the code parts of this assignment and has only been used for the explicitly stated sections above.
