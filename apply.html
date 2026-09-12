@@ -9,6 +9,12 @@
     <meta name="description" content="apply for jobs to protect the enviroment">
     <title>Apply for Jobs | EcoSphere</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <style>
+        .labelRequired::after {
+            content: "*";
+            color: red;
+        }
+    </style>
 </head>
 
 <body>
@@ -130,7 +136,8 @@
                 <p>
                     <label for="otherSkills">Other Skills</label> <br>
                     <textarea name="otherSkills" id="otherSkills"
-                        placeholder="Describe any additional skills here."></textarea>
+                        placeholder="Describe any additional skills here."
+                        style="background: #21769022; border: none; padding: 0.25em 1em;border-radius: 3px;"></textarea>
                 </p>
             </fieldset>
             <div id="formControls">
