@@ -63,11 +63,6 @@ main {
 }
 
 /* apply.css styles */
-.labelRequired::after {
-    content: "*";
-    color: red;
-}
-
 #form-skills-check {
     display: grid;
     grid-template-columns: 5% 95%;
@@ -112,7 +107,7 @@ form .btn {
 }
 
 input[type="text"],
-input[type="email"], form textarea {
+input[type="email"] {
     background: #21769022;
     border: none;
     padding: 0.25em 1em;
@@ -205,6 +200,7 @@ form {
         cursor: pointer;
     }
 }
+/* index.html styling */
 table, th, td {
     border-collapse: collapse; 
     border: 3px solid #023d4f; 
