@@ -12,17 +12,7 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="./index.html" id="nav-home"><img src="./assets/logo-no-bg.png"
-                            alt="EcoSphere company logo"></a></li>
-                <li><a href="./jobs.html">Jobs</a></li>
-                <li><a href="./apply.html">Apply</a></li>
-                <li><a href="./about.html">About</a></li>
-            </ul>
-        </nav>
-    </header>
+    <?php include './header.inc';?>
     <main>
         <div id="pageInfo">
             <h1>Apply for a Position</h1>
@@ -139,6 +129,7 @@
             </div>
         </form>
     </main>
+    <?php include './footer.inc';?>
 </body>
 
 </html>

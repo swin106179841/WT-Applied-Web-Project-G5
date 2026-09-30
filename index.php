@@ -32,11 +32,6 @@
             align-items: center; 
             margin: 0 auto;
         }
-
-        .style_footer {
-            border-top: 4px solid #023d4f;
-            padding-top: 15px
-        }
     </style>
 
 
@@ -45,17 +40,7 @@
 
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="./index.html" id="nav-home"><img src="./assets/logo-no-bg.png"
-                            alt="EcoSphere company logo"></a></li>
-                <li><a href="./jobs.html">Jobs</a></li>
-                <li><a href="./apply.html">Apply</a></li>
-                <li><a href="./about.html">About</a></li>
-            </ul>
-        </nav>
-    </header>
+    <?php include './header.inc';?>
     <main>
         <h1>EcoSphere Alliance</h1>
         <p><strong>"Uniting for a Greener Tomorrow: Together, we empower communities, inspire action, and protect our
@@ -125,13 +110,7 @@
 
         <br>
 
-        <footer class="style_footer">
-        <a href="https://swin-cos10026.atlassian.net/jira/software/projects/SCRUM/boards/1/backlog?atlOrigin=eyJpIjoiNzhkNzI1MTMwOTYzNDQ3NmFmMzI3ODFiNDQxNmQ1MmQiLCJwIjoiaiJ9"
-        id="COS10026_Group05_Jira_Link">Group05 Jira Link</a>
-        <p><a href="https://github.com/swin106179841/WT-Applied-Web-Project-G5.git" 
-        id="COS10026_Group05GitHub_Link">Group05 GitHub Link</a></p>
-        <p>Email EcoSphere Alliance At: <a href="mailto:EcoSphereAlliance@email.com" title="EcoSphere Alliance Email">EcoSphereAlliance@email.com</a></p>
-        </footer>
+        <?php include './footer.inc';?>
 
     </main>
 

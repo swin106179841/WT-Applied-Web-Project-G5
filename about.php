@@ -23,20 +23,7 @@
 
 <body>
 
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="./index.html" id="nav-home">
-                        <img src="./assets/logo-no-bg.png" alt="EcoSphere company logo">
-                    </a>
-                </li>
-                <li><a href="./jobs.html">Jobs</a></li>
-                <li><a href="./apply.html">Apply</a></li>
-                <li><a href="./about.html">About</a></li>
-            </ul>
-        </nav>
-    </header>
+    <?php include './header.inc';?>
 
     <main>
 
@@ -161,13 +148,8 @@
 
     </main>
 
-    <footer>
-        <p style="margin-left: 1em;">
-            <a href="#">Jira Project</a> |
-            <a href="#">GitHub Repository</a> |
-            <a href="mailto:info@ecospher.com">Email Us</a>
-        </p>
-    </footer>
+    <?php include './footer.inc';?>
+
 
 </body>
 

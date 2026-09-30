@@ -61,6 +61,10 @@ main {
     margin-left: 1em;
     margin-right: 1em;
 }
+footer {
+    margin-left: 1em;
+    margin-right: 1em;
+}
 
 /* apply.css styles */
 .labelRequired::after {

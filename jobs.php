@@ -12,17 +12,7 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="./index.html" id="nav-home"><img src="./assets/logo-no-bg.png"
-                            alt="EcoSphere company logo"></a></li>
-                <li><a href="./jobs.html">Jobs</a></li>
-                <li><a href="./apply.html">Apply</a></li>
-                <li><a href="./about.html">About</a></li>
-            </ul>
-        </nav>
-    </header>
+    <?php include './header.inc';?>
     <main>
         <h1>Current Opportunities</h1>
         <p>Join the G05 team and make a tangible impact on our environment. Browse our available conservation projects and roles below.</p>
@@ -54,7 +44,7 @@
                 <li>2+ years of field experience in land management.</li>
                 <li>Experience in controlled burn operations.</li>
             </ul>
-            <a href="apply.html?ref=PRK001">Apply for this position</a>
+            <a href="apply.php?ref=PRK001">Apply for this position</a>
         </section>
 
         <section class="job-listing">
@@ -84,7 +74,7 @@
                 <li>Experience with underwater photography and videography.</li>
                 <li>Commercial boat license.</li>
             </ul>
-            <a href="apply.html?ref=MAR002">Apply for this position</a>
+            <a href="apply.php?ref=MAR002">Apply for this position</a>
         </section>
 
         <section class="job-listing">
@@ -113,7 +103,7 @@
                 <li>Previous experience specifically with marsupial rehabilitation.</li>
                 <li>Strong public speaking skills for leading community workshops.</li>
             </ol>
-            <a href="apply.html?ref=WLD003">Apply for this position</a>
+            <a href="apply.php?ref=WLD003">Apply for this position</a>
         </section>
         
         <aside style="background-color: #f1f8e9; padding: 15px; border-radius: 8px;">
@@ -127,6 +117,8 @@
         </aside>
 
     </main>
+    <?php include './footer.inc';?>
+
 </body>
 
 </html>
