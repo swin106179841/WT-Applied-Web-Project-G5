@@ -50,11 +50,11 @@
                 <legend class="formSectionTitle">Personal Details</legend>
                 <p>
                     <label for="name" class="labelRequired">First Name</label>
-                    <input type="text" name="name" id="name" maxlength="20" placeholder="John" required>
+                    <input type="text" name="name" id="name" maxlength="20" placeholder="John" pattern="[a-zA-Z]{1,20}" required>
                 </p>
                 <p>
                     <label for="surname" class="labelRequired">Last Name</label>
-                    <input type="text" name="surname" id="surname" maxlength="20" placeholder="Smith" required>
+                    <input type="text" name="surname" id="surname" maxlength="20" placeholder="Smith" pattern="[a-zA-Z]{1,20}" required>
                 </p>
                 <p>
                     <label for="DoB" class="labelRequired">Date of Birth</label>
