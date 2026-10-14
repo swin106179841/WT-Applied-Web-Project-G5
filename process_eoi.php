@@ -19,7 +19,7 @@
     $postcode = cleanPost("postcode");
     $email = cleanPost("reference");
     $phone = cleanPost("phone");
-    $skill = cleanPost("skill");
+    $skills = cleanPost("skills");
     $otherSkills = cleanPost("otherSkills");
 
     $allowedStates = ['VIC', 'NSW', 'QLD', 'NT', 'WA', 'SA', 'TAS', 'ACT'];
