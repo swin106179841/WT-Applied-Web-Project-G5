@@ -65,7 +65,7 @@
                     <legend class="labelRequired">Gender</legend>
                     <input type="radio" name="gender" id="genderM" value="male" required>
                     <label for="genderM">Male</label>
-                    <input type="radio" name="gender" id="genderF" value="female">
+                    <input type="radio" name="gender" id="genderF" value="female" required>
                     <label for="genderF">Female</label>
                 </fieldset>
             </fieldset>
