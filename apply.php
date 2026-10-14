@@ -37,7 +37,7 @@
                 </ol>
             </div>
         </div>
-        <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+        <form method="post" action="./process_eoi.php">
             <fieldset class="formSection" id="jobSection">
                 <legend class="formSectionTitle">Job</legend>
                 <p>
