@@ -44,5 +44,44 @@
     if (!preg_match('/^[0-3][0-9]\/[0-1][0-9]\/[1-2][0-9][0-9][0-9]$/', $DoB)) {
         $errors['DoB'] = "Date of Birth must be a valid date.";
     }
-
+    // gender
+    if (!in_array($gender, $allowedGenders, true)) {
+        $errors['gender'] = "Select a valid gender option.";
+    }
+    // address
+    if (!preg_match('/^[a-zA-Z0-9-\/]{1,40}$/', $address)) {
+        $errors['address'] = "Address must be valid length and only contain symbols '-' and '/'.";
+    }
+    // suburb
+    if (!preg_match('/^[a-zA-Z0-9-\/]{1,40}$/', $suburb)) {
+        $errors['suburb'] = "Suburb must be valid length and only contain symbols '-' and '/'.";
+    }
+    // state
+    if (!in_array($state, $allowedStates, true)) {
+        $errors['state'] = "Select a valid state option.";
+    }
+    // postcode
+    if (!preg_match('/^[0-9][0-9][0-9][0-9]$/', $postcode)) {
+        $errors['postcode'] = "Postcode must be 4 numbers only.";
+    }
+    // email
+    // email regex from: https://regexbox.com/regex-templates/email
+    if (!preg_match('/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/', $email)) {
+        $errors['email'] = "Email must be valid email address.";
+    }
+    // phone 
+    if (!preg_match('/^[0-9]{8,12}$/', $phone)) {
+        $errors['phone'] = "Phone must be a valid Australian phone number.";
+    }
+    // skills - stored as string to better fit in with database
+    if (!isset($skills)) {
+        $errors["skills-count"] = "Must select at least 1 skill.";
+    }
+    if (!preg_match('/^[a-z-A-Z, ]{1,55}$/', $skills)) {
+        $errors['skills'] = "Pick a valid combination of skills";
+    }
+    // other skills
+    if(!isset($otherSkills)) {
+        $otherSkills = "";
+    }
 ?>
