@@ -63,9 +63,9 @@
                 </p>
                 <fieldset class="formSection" id="genderFieldset">
                     <legend class="labelRequired">Gender</legend>
-                    <input type="radio" name="gender" id="genderM" required>
+                    <input type="radio" name="gender" id="genderM" value="male" required>
                     <label for="genderM">Male</label>
-                    <input type="radio" name="gender" id="genderF">
+                    <input type="radio" name="gender" id="genderF" value="female">
                     <label for="genderF">Female</label>
                 </fieldset>
             </fieldset>
